@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Cells" customModule="паб" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cells" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="97" id="tTK-jG-X5u" customClass="Cells" customModule="паб" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tTK-jG-X5u" id="AK4-3c-5W4">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M41-Et-Nfp">
+                        <rect key="frame" x="345.33333333333331" y="0.0" width="39.666666666666686" height="97"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system">
+                            <color key="baseForegroundColor" systemColor="systemGray4Color"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бавтика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-Ke-7xN">
+                        <rect key="frame" x="20" y="8" width="150" height="35"/>
+                        <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="mg4-Ac-Ld5"/>
+                            <constraint firstAttribute="width" constant="150" id="xzn-ob-wZh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" systemColor="systemGray3Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇷🇺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42L-UM-B4G">
+                        <rect key="frame" x="20" y="43" width="90" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="dLf-mJ-dWH"/>
+                            <constraint firstAttribute="height" constant="35" id="p00-sx-vak"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ост.: 100л" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F3-Uw-9Cj">
+                        <rect key="frame" x="217.33333333333337" y="30" width="120" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="xSS-Hz-wLr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray3Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="M41-Et-Nfp" secondAttribute="bottom" id="Ece-70-2RH"/>
+                    <constraint firstItem="M41-Et-Nfp" firstAttribute="leading" secondItem="1F3-Uw-9Cj" secondAttribute="trailing" constant="8" symbolic="YES" id="PRB-p9-bm4"/>
+                    <constraint firstItem="42L-UM-B4G" firstAttribute="top" secondItem="BeK-Ke-7xN" secondAttribute="bottom" id="aHO-Oh-fEV"/>
+                    <constraint firstItem="M41-Et-Nfp" firstAttribute="top" secondItem="AK4-3c-5W4" secondAttribute="top" id="b7L-IV-D6W"/>
+                    <constraint firstItem="1F3-Uw-9Cj" firstAttribute="top" secondItem="AK4-3c-5W4" secondAttribute="top" constant="30" id="ie3-ld-qbp"/>
+                    <constraint firstItem="BeK-Ke-7xN" firstAttribute="top" secondItem="AK4-3c-5W4" secondAttribute="top" constant="8" id="ncE-wG-9HO"/>
+                    <constraint firstItem="42L-UM-B4G" firstAttribute="leading" secondItem="AK4-3c-5W4" secondAttribute="leading" constant="20" symbolic="YES" id="rxE-UU-0c0"/>
+                    <constraint firstAttribute="bottom" secondItem="1F3-Uw-9Cj" secondAttribute="bottom" constant="30" id="s2f-cV-7GA"/>
+                    <constraint firstAttribute="trailing" secondItem="M41-Et-Nfp" secondAttribute="trailing" constant="8" id="vVU-WX-M0a"/>
+                    <constraint firstItem="BeK-Ke-7xN" firstAttribute="leading" secondItem="AK4-3c-5W4" secondAttribute="leading" constant="20" symbolic="YES" id="zH5-gp-Ege"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+            <connections>
+                <outlet property="beerName" destination="BeK-Ke-7xN" id="WO5-qq-hlD"/>
+                <outlet property="country" destination="42L-UM-B4G" id="8be-Em-X1d"/>
+                <outlet property="nextButton" destination="M41-Et-Nfp" id="Ekk-aW-Ule"/>
+                <outlet property="remains" destination="1F3-Uw-9Cj" id="I4D-6t-ZjZ"/>
+            </connections>
+            <point key="canvasLocation" x="-89.312977099236633" y="80.633802816901408"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
